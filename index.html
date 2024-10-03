@@ -3,209 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mafia Daddy</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap');
-
-        :root {
-            --primary-color: #c0c0c0;
-            --secondary-color: #000000;
-            --accent-color: #ff0000;
-            --bg-color: #1a1a1a;
-            --text-color: #ffffff;
-        }
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            overflow-x: hidden;
-            perspective: 1000px; /* Add perspective for 3D effect */
-        }
-
-        header {
-            background-color: var(--secondary-color);
-            color: var(--primary-color);
-            text-align: center;
-            padding: 2rem;
-            position: relative;
-            overflow: hidden;
-            transform: translateZ(0); /* Ensure 3D rendering */
-        }
-
-        header::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('https://i.imgur.com/nJYhfaa.jpg') center/cover no-repeat;
-            opacity: 0.3;
-            z-index: 0;
-            animation: zoomIn 10s infinite alternate;
-        }
-
-        h1, h2 {
-            font-family: 'Montserrat', sans-serif;
-            position: relative;
-            z-index: 1;
-            transform: translateZ(50px); /* 3D effect */
-        }
-
-        h1 {
-            font-size: 3.5rem;
-            margin: 0;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-            animation: fadeInDown 1s ease-out;
-        }
-
-        main {
-            padding: 2rem;
-            max-width: 1000px;
-            margin: 0 auto;
-            transform: translateZ(0); /* Ensure 3D rendering */
-        }
-
-        .quote {
-            font-style: italic;
-            font-size: 1.2rem;
-            color: var(--accent-color);
-            text-align: center;
-            margin: 2rem 0;
-            padding: 1rem;
-            background-color: rgba(0, 0, 0, 0.3);
-            border-radius: 5px;
-            position: relative;
-            overflow: hidden;
-            animation: fadeInLeft 1s ease-out;
-            transform: translateZ(30px); /* 3D effect */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow for depth */
-        }
-
-        .quote::before {
-            content: "“";
-            font-size: 4rem;
-            position: absolute;
-            top: -10px;
-            left: 10px;
-            opacity: 0.2;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        ul li {
-            background: var(--secondary-color);
-            margin: 0.5rem 0;
-            padding: 1rem;
-            border-radius: 5px;
-            transition: transform 0.3s;
-            transform: translateZ(20px); /* 3D effect */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow for depth */
-        }
-
-        ul li:hover {
-            transform: scale(1.05) translateZ(20px);
-        }
-
-        .image-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            justify-content: center;
-            margin: 2rem 0;
-        }
-
-        .image-gallery img {
-            width: 100%;
-            max-width: 300px;
-            border-radius: 10px;
-            transition: transform 0.3s, box-shadow 0.3s;
-            transform: translateZ(10px); /* 3D effect */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow for depth */
-        }
-
-        .image-gallery img:hover {
-            transform: scale(1.05) translateZ(10px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-        }
-
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeInLeft {
-            from {
-                opacity: 0;
-                transform: translateX(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        @keyframes zoomIn {
-            from {
-                transform: scale(1);
-            }
-            to {
-                transform: scale(1.1);
-            }
-        }
-    </style>
+    <title>Mafia Daddy - King of the Underworld</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Mafia Daddy</h1>
-        <p>The King of the Underworld</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#empire">Empire</a></li>
+                <li><a href="#operations">Operations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-        <div class="quote">"In this business, you either drive or you're driven."</div>
-        <h2>The Boss</h2>
-        <p>I'm Mafia Daddy, the undisputed king of the underworld. From the streets to the high rises, my influence knows no bounds. Luxury, power, and respect - that's what we're all about.</p>
-        <h2>Our Family Business</h2>
-        <ul>
-            <li>High-end Car Dealerships - Only the finest cars for our discerning clientele</li>
-            <li>Nightclub Empire - Where the elite come to play</li>
-            <li>Import/Export - Facilitating international trade, no questions asked</li>
-            <li>Real Estate Development - Building the future, one skyscraper at a time</li>
-        </ul>
-        <h2>The Legacy</h2>
-        <p>They call us criminals, but we're businessmen with a vision. We're bringing prosperity to our people, one deal at a time. The name Mafia Daddy commands respect - and for good reason.</p>
-        <div class="quote">"Respect is earned, loyalty is given, and trust is gained. But it only takes seconds to lose it all."</div>
-        <div class="image-gallery">
-            <img src="https://via.placeholder.com/300x200.png?text=Mafia+Car" alt="Mafia Car">
-            <img src="https://via.placeholder.com/300x200.png?text=Nightclub" alt="Nightclub">
-            <img src="https://via.placeholder.com/300x200.png?text=Import+Export" alt="Import Export">
-            <img src="https://via.placeholder.com/300x200.png?text=Real+Estate" alt="Real Estate">
-        </div>
+        <section id="hero">
+            <h1>Mafia Daddy</h1>
+            <h2>Welcome to my</h2>
+            <h2>Empire</h2>
+            <p>The Undisputed King of the Underworld</p>
+        </section>
+
+        <section id="about">
+            <h2>About The Boss</h2>
+            <p>As the Mafia Daddy, I've built an empire that spans from the gritty streets to the glittering high-rises. With a keen eye for opportunity and an iron fist, I've transformed the underworld into a sophisticated business operation.</p>
+            <div class="quote">"In this business, you either drive or you're driven."</div>
+        </section>
+
+        <section id="empire">
+            <h2>The Family Business</h2>
+            <ul>
+                <li>
+                    <h3>01</h3>
+                    <h4>High-end Car Dealerships</h4>
+                    <p>Only the finest cars for our discerning clientele</p>
+                </li>
+                <li>
+                    <h3>02</h3>
+                    <h4>Nightclub Empire</h4>
+                    <p>Where the elite come to play</p>
+                </li>
+                <li>
+                    <h3>03</h3>
+                    <h4>Import/Export</h4>
+                    <p>Facilitating international trade, no questions asked</p>
+                </li>
+                <li>
+                    <h3>04</h3>
+                    <h4>Real Estate Development</h4>
+                    <p>Building the future, one skyscraper at a time</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="operations">
+            <h2>Our Operations</h2>
+            <div class="operation">
+                <img src="car-dealership.jpg" alt="Luxury car dealership">
+                <h3>Luxury Wheels</h3>
+                <p>Our high-end car dealerships offer only the most exclusive vehicles for those who demand the best.</p>
+            </div>
+            <div class="operation">
+                <img src="nightclub.jpg" alt="Exclusive nightclub">
+                <h3>Neon Nights</h3>
+                <p>Experience the pinnacle of nightlife in our chain of exclusive clubs across the city.</p>
+            </div>
+            <div class="operation">
+                <img src="import-export.jpg" alt="Import/Export operations">
+                <h3>Global Connections</h3>
+                <p>Our import/export business ensures smooth transactions across borders, no matter the cargo.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>Interested in doing business? Contact us through secure channels only.</p>
+            <form>
+                <input type="text" placeholder="Codename" required>
+                <input type="email" placeholder="Secure Email" required>
+                <textarea placeholder="Your message (encrypted)" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
     </main>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const quotes = document.querySelectorAll('.quote');
-            quotes.forEach(quote => {
-                quote.addEventListener('mouseover', () => {
-                    quote.style.backgroundColor = 'rgba(255, 0, 0, 0.3)';
-                });
-                quote.addEventListener('mouseout', () => {
-                    quote.style.backgroundColor = 'rgba(0, 0, 0, 0.3)';
-                });
-            });
-        });
-    </script>
+
+    <footer>
+        <p>© 2024 Mafia Daddy Enterprises. All rights reserved.</p>
+        <p>Remember, silence is golden.</p>
+    </footer>
 </body>
 </html>
